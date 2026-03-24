@@ -1,18 +1,18 @@
-/* Основные настройки экрана */
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    background-color: #1a1a1a; /* Цвет на случай, если картинка не прогрузится */
+    background-color: #1a1a1a; 
 }
 
-/* Главный блок с фоновым изображением */
+
 .hero {
     background-image: 
         linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
-        url('fon.jpg'); /* Файл должен называться именно так! */
+        url('fon.jpg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -30,7 +30,7 @@ body, html {
     text-align: center;
 }
 
-/* Заголовок */
+
 h1 {
     font-size: clamp(3rem, 10vw, 5rem);
     letter-spacing: 8px;
@@ -38,7 +38,7 @@ h1 {
     text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 
-/* Карточка с описанием */
+
 .welcome-box {
     background: rgba(0, 0, 0, 0.8);
     padding: 40px;
@@ -53,7 +53,7 @@ h1 {
     text-transform: uppercase;
 }
 
-/* Сетка "Чего ждать / Что нужно" */
+
 .simple-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,7 +62,7 @@ h1 {
     text-align: left;
 }
 
-/* Адаптация сетки для телефонов */
+
 @media (max-width: 600px) {
     .simple-grid { grid-template-columns: 1fr; }
 }
@@ -78,7 +78,7 @@ h1 {
     opacity: 0.8;
 }
 
-/* Кнопка Discord */
+
 .discord-btn {
     display: inline-block;
     background: #5865F2;
